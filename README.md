@@ -39,3 +39,6 @@ To quit without save (I think) `:q!`
 
 ## Empty commit
 `git commit --allow-empty -m "Commit to trigger build"`
+
+## Reflog
+[Recover lost git commits](http://effectif.com/git/recovering-lost-git-commits)
