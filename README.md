@@ -28,6 +28,17 @@ This commits ("saves") your changes locally, with the given commit message.
 8. Push your local commit(s) to the remote repo: `git push`
 Now your changes are also in the remote.
 
+## git reset
+
+To undo or discard commits, you can use
+* `git reset --hard <commit>` to reset your HEAD to that commit and **discarding** any commits you made on top of that commit.
+
+* `git reset --soft <commit>` to reset your HEAD to that commit without discarding the changes you made on top of that commit, but "uncommitting" them.
+
+## git push force
+`git push --force` will overwrite the status of the branch on the remote with your local status.
+
+**Note:** The original status on the remote will be **destroyed**. If anyone on the team has that branch locally, they'll need to delete it locally and checkout the branch again to get it in the same status as the remote.
 
 ### Vi cheat sheet:
 To insert (i.e. write/delete), press i
