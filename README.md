@@ -35,6 +35,9 @@ To undo or discard commits, you can use
 
 * `git reset --soft <commit>` to reset your HEAD to that commit without discarding the changes you made on top of that commit, but "uncommitting" them.
 
+## git commit amend
+`git commit -a --amend` to amend to previous commit (only if you haven't pushed yet). (Note: if you use `-a` it will include all staged changes, so you might want to `git status` first).
+
 ## git push force
 `git push --force` will overwrite the status of the branch on the remote with your local status.
 
