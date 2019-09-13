@@ -43,6 +43,17 @@ To undo or discard commits, you can use
 
 **Note:** The original status on the remote will be **destroyed**. If anyone on the team has that branch locally, they'll need to delete it locally and checkout the branch again to get it in the same status as the remote.
 
+## interactive rebase
+`git rebase -i <commit hash>` to do an interactive rebase from the given commit hash.
+
+This will open a list of commits with their hashes.
+
+Replace `pick` (keep) with `squash` if you want to squash a commit into the previous commit in the list.
+
+Adter saving the list, update the commit messages as needed.
+
+Alternatively, tools like GitHub and GitLab offer the option to "squash on merge" when merging a feature branch. This will squash all commits in a branch into one commit on master.
+
 ### Vi cheat sheet:
 
 To insert (i.e. write/delete), press i
