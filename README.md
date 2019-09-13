@@ -44,10 +44,15 @@ To undo or discard commits, you can use
 **Note:** The original status on the remote will be **destroyed**. If anyone on the team has that branch locally, they'll need to delete it locally and checkout the branch again to get it in the same status as the remote.
 
 ### Vi cheat sheet:
+
 To insert (i.e. write/delete), press i
+
 To get out of this mode, press `esc`
+
 To save and quit, type `:wq`
+
 To quit without save (I think) `:q!`
+
 (Note: you can replace vim with another editor!)
 
 
