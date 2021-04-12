@@ -1,4 +1,4 @@
-# git-cheatsheet
+# A bit of git
 A git cheatsheet
 
 ## git basics
