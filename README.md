@@ -66,7 +66,7 @@ To save and quit, type `:wq`
 
 To quit without save `:q!`
 
-(Note: you can replace vi with another editor!)
+(Note: you can replace vi with another editor! See [Customizing Git](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration))
 
 ## Empty commit
 `git commit --allow-empty -m "Commit to trigger build"`
