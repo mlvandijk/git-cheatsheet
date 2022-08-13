@@ -48,7 +48,9 @@ To undo or discard commits, you can use
 
 This will open a list of commits with their hashes.
 
-Replace `pick` (keep) with `squash` if you want to squash a commit into the previous commit in the list.
+Replace `pick` (keep) with `squash` or `fixup` if you want to squash a commit into the previous commit in the list.
+
+(Use `squash` to combine the commit messages of the individual commits; use `fixup` if you want to use the commit message from the first commit)
 
 Adter saving the list, update the commit messages as needed.
 
@@ -56,19 +58,21 @@ Alternatively, tools like GitHub and GitLab offer the option to "squash on merge
 
 ### Vi cheat sheet:
 
-To insert (i.e. write/delete), press i
+To insert (i.e. write/delete), press `I`
 
-To get out of this mode, press `esc`
+To get out of edit mode, press `esc`
 
 To save and quit, type `:wq`
 
-To quit without save (I think) `:q!`
+To quit without save `:q!`
 
-(Note: you can replace vim with another editor!)
-
+(Note: you can replace vi with another editor!)
 
 ## Empty commit
 `git commit --allow-empty -m "Commit to trigger build"`
 
 ## Reflog
 [Recover lost git commits](http://effectif.com/git/recovering-lost-git-commits)
+
+## Bisect
+[Find which commit broke the test](https://git-scm.com/docs/git-bisect)
