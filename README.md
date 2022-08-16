@@ -3,6 +3,8 @@ A git cheatsheet
 
 ## git basics
 
+### From an existing repository
+
 1. Clone repo: `git clone <repo>`
 The repo will be cloned to whatever folder you use this command from.
 
@@ -17,8 +19,10 @@ This makes git aware of the existence of this file. It does not commit the file 
 Note: You cannot pull/merge/checkout other branch when you have uncommitted changes.
 You'll have to stash them.
 
-5. To merge master into your branch `git merge master`
-This will copy and apply changes from master to your branch
+4. To add all files: `git add .`
+
+5. To merge main into your branch `git merge main`
+This will copy and apply changes from main to your branch
 
 6. Commit changes: `git commit -m "<commit message>"`
 This commits ("saves") your changes locally, with the given commit message.
@@ -27,6 +31,24 @@ This commits ("saves") your changes locally, with the given commit message.
 
 8. Push your local commit(s) to the remote repo: `git push`
 Now your changes are also in the remote.
+
+### In a new repository
+1. Use `git init` to add the current project to Git.
+
+2. Check current status: `git status`
+
+3. Add files you want to add to version control, by using either `git add .` to add all files or `git add <file>` to add individual files.
+
+4. Commit changes: `git commit -m "<commit message>"`
+This commits ("saves") your changes locally, with the given commit message.
+
+5. Create a project on GitHub and copy the location from Quick Setup
+
+6. Add that location as a remote: `git remote add origin <remote>`
+
+7. Push your local commit(s) to the remote repo: `git push`
+
+
 
 ## git reset
 
@@ -54,7 +76,7 @@ Replace `pick` (keep) with `squash` or `fixup` if you want to squash a commit in
 
 Adter saving the list, update the commit messages as needed.
 
-Alternatively, tools like GitHub and GitLab offer the option to "squash on merge" when merging a feature branch. This will squash all commits in a branch into one commit on master.
+Alternatively, tools like GitHub and GitLab offer the option to "squash on merge" when merging a feature branch. This will squash all commits in a branch into one commit on main.
 
 ### Vi cheat sheet:
 
