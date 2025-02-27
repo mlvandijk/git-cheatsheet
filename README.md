@@ -78,6 +78,10 @@ Adter saving the list, update the commit messages as needed.
 
 Alternatively, tools like GitHub and GitLab offer the option to "squash on merge" when merging a feature branch. This will squash all commits in a branch into one commit on main.
 
+## Merge the first 2 commits in a repo
+
+`git rebase -i --root`
+
 ### Vi cheat sheet:
 
 To insert (i.e. write/delete), press `I`
