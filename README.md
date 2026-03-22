@@ -94,8 +94,22 @@ To quit without save `:q!`
 
 (Note: you can replace vi with another editor! See [Customizing Git](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration))
 
+## Add and push tags
+
+Create a tag on the current branch: 
+`git tag <tagname>`
+
+Create a tag on the current branch and add a description: 
+`git tag <tagname> -a`
+
+Push tags:
+`git push origin --tags`
+
+
 ## Empty commit
 `git commit --allow-empty -m "Commit to trigger build"`
+
+
 
 ## Reflog
 [Recover lost git commits](http://effectif.com/git/recovering-lost-git-commits)
