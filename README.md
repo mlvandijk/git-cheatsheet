@@ -61,7 +61,9 @@ To undo or discard commits, you can use
 `git commit -a --amend` to amend to previous commit (only if you haven't pushed yet). (Note: if you use `-a` it will include all staged changes, so you might want to `git status` first).
 
 ## git push force
-`git push --force` will overwrite the status of the branch on the remote with your local status.
+* `git push --force` will overwrite the status of the branch on the remote with your local status.
+
+* `git push --force-with-lease` is like `git push --force` with the additional check that the current status of the remote matches the local status for the remote. It helps in preventing you from deleting commits from other team members.
 
 **Note:** The original status on the remote will be **destroyed**. If anyone on the team has that branch locally, they'll need to delete it locally and checkout the branch again to get it in the same status as the remote.
 
