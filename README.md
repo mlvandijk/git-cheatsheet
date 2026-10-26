@@ -105,6 +105,8 @@ Create a tag on the current branch and add a description:
 Push tags:
 `git push origin --tags`
 
+Hard update tags from remote:
+`git fetch origin --tags --force`
 
 ## Empty commit
 `git commit --allow-empty -m "Commit to trigger build"`
